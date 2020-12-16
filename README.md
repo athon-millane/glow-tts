@@ -22,6 +22,10 @@ We also provide the [pretrained model](https://drive.google.com/open?id=1JiCMBVT
 </table>
 
 
+## Athon's Added Notes
+* The encoder-decoder architecture seems fairly symmetric. Can we invert the problem to speech-to-text -> is there any possible advantage here over existing STT methods?
+* Monotonic alignment search could be uniformly applied. Would be used to inform the text decoder and find alignment using the same viterbi algorithm.
+
 ## Update Notes*
 
 This result was not included in the paper. Lately, we found that two modifications help to improve the synthesis quality of Glow-TTS.; 1) moving to a vocoder, [HiFi-GAN](https://arxiv.org/abs/2010.05646) to reduce noise, 2) putting a blank token between any two input tokens to improve pronunciation. Specifically, 
